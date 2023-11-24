@@ -1,0 +1,31 @@
+nav {
+    padding: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo, li {
+    text-transform: uppercase;
+}
+
+.logo {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    white-space: nowrap; 
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+ul {
+    display: flex;
+    flex-basis: 500px;
+    justify-content: space-around;
+}
+
+li {
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+/* nav > * {
+    border: grey 2px solid; 
+} */

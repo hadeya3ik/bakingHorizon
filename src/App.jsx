@@ -1,4 +1,4 @@
-import Home from './pages/home'
+import Home from './pages/home/home'
 import Gallery from './pages/gallery'
 import Menu from './pages/menu'
 import Faq from './pages/faq'

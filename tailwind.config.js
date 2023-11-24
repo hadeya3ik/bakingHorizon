@@ -8,7 +8,7 @@ export default {
     extend: {
       screens: {
         'sm': '480px',   // Your custom small screen breakpoint
-        'md': '925px',   // Your custom medium screen breakpoint
+        'md': '768px',   // Your custom medium screen breakpoint
         'lg': '1024px',  // Your custom large screen breakpoint
         'xl': '1280px',  // Your custom extra-large screen breakpoint
       },

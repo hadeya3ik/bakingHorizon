@@ -2,46 +2,43 @@ import { RiMenuFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import "./navbar.css"
 
-const NavItem = ({ to, children, isColumn }) => (
-  <li className={`px-8 ${isColumn ? 'p-4 text-center' : ''}`}>
+const NavItem = ({ to, children}) => (
+  <li>
     <Link to={to}>{children}</Link>
   </li>
 );
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
     <>
-      <nav className="bg-red-500 flex px-8 pl-10 py-4 uppercase justify-between items-center">
-        <Link to="/" className="text-3xl">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Geologica:wght@500;600&family=IBM+Plex+Mono:ital,wght@1,200&family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet"></link>
+      <nav className="flex items-center justify-between">
+        <Link to="/" className="logo">
           baking horizon
         </Link>
-        <div className="hidden md:flex">
-          {/* Render the regular navigation on larger screens */}
-          <ul className="flex justify-around">
-            <NavItem to="/">home</NavItem>
-            <NavItem to="/gallery">gallery</NavItem>
-            <NavItem to="/menu">menu</NavItem>
-            <NavItem to="/faq">faq</NavItem>
-            <NavItem to="/contact">contact</NavItem>
-          </ul>
+        <ul className="hidden md:flex space-x-4">
+          <NavItem to="/">home</NavItem>
+          <NavItem to="/gallery">gallery</NavItem>
+          <NavItem to="/menu">menu</NavItem>
+          <NavItem to="/faq">faq</NavItem>
+          <NavItem to="/contact">contact</NavItem>
+        </ul>
+        <div className="md:hidden">
+          <div  onClick={handleNav} className="px-1">
+            {!nav ? <RiMenuFill size={30} /> : <IoCloseSharp size={30} />}
+          </div>
         </div>
-        <div className="md:hidden" onClick={handleNav}>
-          {/* Render the hamburger menu icon on smaller screens */}
-          {!nav ? <RiMenuFill size={30} /> : <IoCloseSharp size={30} />}
-        </div>
-      </nav>
-
-      {/* Render the mobile menu */}
-      <nav className={`md:hidden ${nav ? "bg-blue-500" : "hidden"}`}>
-        <div className={`${nav ? "bg-blue-500" : ""}`}>
-          <ul className="">
+    </nav>
+      {/* <nav>
+        <div>
+          <ul>
             <NavItem to="/" isColumn>home</NavItem>
             <NavItem to="/gallery" isColumn>gallery</NavItem>
             <NavItem to="/menu" isColumn>menu</NavItem>
@@ -49,7 +46,7 @@ const NavBar = () => {
             <NavItem to="/contact" isColumn>contact</NavItem>
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 };
