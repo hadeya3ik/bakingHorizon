@@ -26,6 +26,21 @@ li {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
-/* nav > * {
-    border: grey 2px solid; 
-} */
+.mobile-menu {
+    padding: 0;
+    background-color: rgba(128, 128, 128, 0.25);
+    position: fixed;
+    top: 56px;
+    right: 0;
+    height: 100%;
+    width: 80%;
+}
+
+.menu-button{
+    background-color: rgba(128, 128, 128, 0);
+    padding-right: 8px;
+    padding-top: 13px;
+    height: 56px;
+    display: flex;
+    justify-content: end;
+}

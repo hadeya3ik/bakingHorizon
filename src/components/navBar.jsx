@@ -1,5 +1,5 @@
-import { RiMenuFill } from "react-icons/ri";
-import { IoCloseSharp } from "react-icons/io5";
+import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./navbar.css"
@@ -32,21 +32,19 @@ const NavBar = () => {
         </ul>
         <div className="md:hidden">
           <div  onClick={handleNav} className="px-1">
-            {!nav ? <RiMenuFill size={30} /> : <IoCloseSharp size={30} />}
+            {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
           </div>
         </div>
     </nav>
-      {/* <nav>
-        <div>
-          <ul>
-            <NavItem to="/" isColumn>home</NavItem>
-            <NavItem to="/gallery" isColumn>gallery</NavItem>
-            <NavItem to="/menu" isColumn>menu</NavItem>
-            <NavItem to="/faq" isColumn>faq</NavItem>
-            <NavItem to="/contact" isColumn>contact</NavItem>
-          </ul>
-        </div>
-      </nav> */}
+    <nav className={`mobile-menu md:hidden ${nav ? "" : "hidden"}`}>
+      <ul className="flex flex-col items-center pt-16">
+          <NavItem to="/">home</NavItem>
+          <NavItem to="/gallery">gallery</NavItem>
+          <NavItem to="/menu">menu</NavItem>
+          <NavItem to="/faq">faq</NavItem>
+          <NavItem to="/contact">contact</NavItem>
+        </ul>
+      </nav>
     </>
   );
 };
