@@ -1,16 +1,19 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
+
 import { useState } from "react";
 import "./navbar.css"
+import { Link } from 'react-router-dom';
 
-const NavItem = ({ to, children, onClick }) => (
-  <li>
-    <Link to={to} onClick={onClick}>
-      {children}
-    </Link>
-  </li>
-);
+const NavItem = ({ to, children, onClick }) => {
+  return (
+    <li>
+      <Link to={to} onClick={onClick}>
+        {children}
+      </Link>
+    </li>
+  );
+};
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -44,7 +47,6 @@ const NavBar = () => {
         <NavItem to="/contact" onClick={handleNav}>contact</NavItem>
       </ul>
     </nav>
-    
     </>
   );
 };

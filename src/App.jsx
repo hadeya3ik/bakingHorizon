@@ -3,7 +3,7 @@ import Gallery from './pages/gallery'
 import Menu from './pages/menu'
 import Faq from './pages/faq'
 import Contact from './pages/contact'
-import NavBar from './components/navbar'
+import NavBar from './components/navbar/navBar'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
 function App() {

@@ -43,8 +43,14 @@ li {
     }
 }
  
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+ 
 .mobile-menu {
-    padding-top: 10rem;
+    padding-top: 8rem;
     background-color: rgba(128, 128, 128, 0.25);
     position: fixed;
     top: 50px;
@@ -59,11 +65,24 @@ li {
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .mobile-menu li {
     font-size: 1.5rem;
+}
+
+li {
+    transition: color 0.3s ease; 
+}
+  
+li:hover {
+  color: palevioletred; 
+}
+
+li.active {
+    color: palevioletred;
+    font-weight: bold; 
 }
 
 .menu-button {
@@ -80,5 +99,5 @@ li {
 
 .mobile-menu.clicked {
     transform: translateX(0);
-    opacity: 1 !important;
+    opacity: 1
 }
