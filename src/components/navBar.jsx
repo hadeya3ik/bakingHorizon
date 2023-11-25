@@ -37,7 +37,7 @@ const NavBar = () => {
         </div>
     </nav>
     <nav className={`mobile-menu md:hidden ${nav ? "" : "hidden"}`}>
-      <ul className="flex flex-col items-center pt-16">
+      <ul>
           <NavItem to="/">home</NavItem>
           <NavItem to="/gallery">gallery</NavItem>
           <NavItem to="/menu">menu</NavItem>
