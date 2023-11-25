@@ -1,12 +1,14 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./navbar.css"
 
-const NavItem = ({ to, children}) => (
+const NavItem = ({ to, children, onClick }) => (
   <li>
-    <Link to={to}>{children}</Link>
+    <Link to={to} onClick={onClick}>
+      {children}
+    </Link>
   </li>
 );
 
@@ -18,33 +20,31 @@ const NavBar = () => {
 
   return (
     <>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Geologica:wght@500;600&family=IBM+Plex+Mono:ital,wght@1,200&family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet"></link>
-      <nav className="flex items-center justify-between">
+      <nav >
         <Link to="/" className="logo">
           baking horizon
         </Link>
-        <ul className="hidden md:flex space-x-4">
+        <ul className="top-ul">
           <NavItem to="/">home</NavItem>
           <NavItem to="/gallery">gallery</NavItem>
           <NavItem to="/menu">menu</NavItem>
           <NavItem to="/faq">faq</NavItem>
           <NavItem to="/contact">contact</NavItem>
         </ul>
-        <div className="md:hidden">
-          <div  onClick={handleNav} className="px-1">
+        <div  onClick={handleNav} className="menu-button">
             {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
-          </div>
         </div>
     </nav>
-    <nav className={`mobile-menu md:hidden ${nav ? "" : "hidden"}`}>
+    <nav className={`mobile-menu ${nav ? "clicked" : "hidden"}`}>
       <ul>
-          <NavItem to="/">home</NavItem>
-          <NavItem to="/gallery">gallery</NavItem>
-          <NavItem to="/menu">menu</NavItem>
-          <NavItem to="/faq">faq</NavItem>
-          <NavItem to="/contact">contact</NavItem>
-        </ul>
-      </nav>
+        <NavItem to="/" onClick={handleNav}>home</NavItem>
+        <NavItem to="/gallery" onClick={handleNav}>gallery</NavItem>
+        <NavItem to="/menu" onClick={handleNav}>menu</NavItem>
+        <NavItem to="/faq" onClick={handleNav}>faq</NavItem>
+        <NavItem to="/contact" onClick={handleNav}>contact</NavItem>
+      </ul>
+    </nav>
+    
     </>
   );
 };
