@@ -6,8 +6,26 @@ nav {
     align-items: center;
 }
 
+li:hover {
+  color: palevioletred; 
+}
+
+/* li.active {
+    color: palevioletred;
+    font-weight: bold; 
+} */
+
+.top-ul li a.active {
+    color: palevioletred;;
+}
+
 .logo, li {
     text-transform: uppercase;
+}
+
+.highlighted {
+    font-weight: bold; /* or any other styling you want */
+    background-color: yellow; /* or any other styling you want */
 }
 
 .logo {
@@ -76,14 +94,6 @@ li {
     transition: color 0.3s ease; 
 }
   
-li:hover {
-  color: palevioletred; 
-}
-
-li.active {
-    color: palevioletred;
-    font-weight: bold; 
-}
 
 .menu-button {
     height: 30px;
