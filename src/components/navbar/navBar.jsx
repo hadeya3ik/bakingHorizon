@@ -24,7 +24,7 @@ const navItems = [
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [activeNavItem, setActiveNavItem] = useState(null);
+  const [activeNavItem, setActiveNavItem] = useState("/");
 
   const handleNav = () => {
     setNav(!nav);
@@ -47,8 +47,7 @@ const NavBar = () => {
               key={item.to}
               to={item.to}
               onClick={() => handleNavItemClick(item.to)}
-              isActive={activeNavItem === item.to}
-            >
+              isActive={activeNavItem === item.to}>
               {item.text}
             </NavItem>
           ))}
@@ -58,14 +57,13 @@ const NavBar = () => {
         </div>
       </nav>
       <nav className={`mobile-menu ${nav ? "clicked" : "hidden"}`}>
-        <ul>
+        <ul className="side-ul">
           {navItems.map((item) => (
             <NavItem
               key={item.to}
               to={item.to}
               onClick={() => handleNavItemClick(item.to)}
-              isActive={activeNavItem === item.to}
-            >
+              isActive={activeNavItem === item.to}>
               {item.text}
             </NavItem>
           ))}

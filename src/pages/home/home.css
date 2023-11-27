@@ -1,0 +1,64 @@
+.hero {
+    background-image: url("../../images/hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 25rem;
+    background-position: center bottom;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+.about-us h2 {
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 900;
+}
+
+.about-us p {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    max-width: 700px;
+}
+
+.info {
+    background-color: rgb(255, 230, 226) ;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .info{
+        flex-direction: column;
+    }
+}
+
+.info h4 { 
+    margin: 0.35rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.info p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 0.75rem;;
+}
+
+.info .bullet {
+    width: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
