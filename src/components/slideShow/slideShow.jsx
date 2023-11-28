@@ -1,6 +1,6 @@
 import "./slideShow.css";
 import {data} from './mockData.jsx'
-import pic1 from './../../images/pic1.png'; 
+import { Link } from "react-router-dom";
 
 const SlideShow = () => {
   return (
@@ -14,7 +14,9 @@ const SlideShow = () => {
         </div>
         
       </div>
-      <button>View More</button>
+      <button>
+        <Link to="/gallery">View More</Link>
+      </button>
     </div>
   )
 }

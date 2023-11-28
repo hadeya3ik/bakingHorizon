@@ -1,6 +1,5 @@
 import React from 'react';
 import './home.css';
-import heroImage from '../../images/HeroPic.jpg'; // Import the image
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { BsBalloonHeart } from "react-icons/bs";
 import { PiPlant } from "react-icons/pi";
