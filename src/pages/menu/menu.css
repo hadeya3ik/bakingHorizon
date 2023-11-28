@@ -1,0 +1,54 @@
+.menu h {
+    background-color: rgb(247, 231, 255);
+    width: 100vw;
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.menu h2 {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.flavors-section, .menu, .sizing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flavors-section {
+    padding: 2rem;
+    padding-top: 0;
+    gap: 1rem;
+}
+
+.menu {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.menu h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+}
+
+.menu p {
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.sizing {
+    gap: 0.5rem;
+    padding-bottom: 4rem;
+}
+
+.sizing p {
+    font-style: normal;
+}

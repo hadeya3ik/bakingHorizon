@@ -37,7 +37,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav>
+      <nav className="top-nav">
         <Link to="/" className="logo">
           baking horizon
         </Link>

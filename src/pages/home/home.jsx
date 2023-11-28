@@ -31,7 +31,7 @@ const Home = () => {
           <p>Our home-based business features a Halton Health certified kitchen that upholds the highest standards of cleanliness and health.</p>
         </div>
       </div>
-      <SlideShow></SlideShow>
+      <SlideShow ></SlideShow>
     </>
   );
 };
