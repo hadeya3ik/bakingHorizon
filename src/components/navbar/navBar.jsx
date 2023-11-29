@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const NavItem = ({ to, children, onClick, isActive }) => {
   return (
-    <li>
+    <li className="nav-li">
       <Link to={to} onClick={onClick} className={isActive ? "active" : ""}>
         {children}
       </Link>
@@ -52,7 +52,7 @@ const NavBar = () => {
             </NavItem>
           ))}
         </ul>
-        <div onClick={handleNav} className="menu-button">
+        <div onClick={handleNav} className="menu-icon">
           {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
         </div>
       </nav>

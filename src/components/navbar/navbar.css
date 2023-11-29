@@ -6,10 +6,6 @@ nav {
     align-items: center;
 }
 
-li:hover {
-  color: palevioletred; 
-}
-
 .top-nav {
     position: relative;
     z-index: 266;
@@ -18,26 +14,27 @@ li:hover {
 .mobile-menu {
     z-index: 1;
     padding-top: 8rem;
-    background-color: rgba(128, 128, 128, 0.65);
+    background-color: rgba(221, 221, 221, 0.845);
     position: fixed;
     top: 0px;
     right: 0;
     height: 100%;
     width: 70%; 
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease !important;
 }
 
-.top-ul li a.active, .side-ul li a.active{
+.mobile-menu .nav-li:hover, .nav-li:hover, .top-ul .active, .side-ul .active{
     color: palevioletred;;
 }
 
-.logo, li {
+.logo, .nav-li {
     text-transform: uppercase;
 }
 
-.highlighted {
-    font-weight: bold; /* or any other styling you want */
-    background-color: yellow; /* or any other styling you want */
-}
+.nav-li {
+    transition: color 0.3s ease; 
+} 
 
 .logo {
     padding-left: 1rem;
@@ -47,18 +44,18 @@ li:hover {
     font-family: 'Nanum Myeongjo', serif;
 }
 
-ul {
+.top-ul, .side-ul {
     display: flex;
     flex-basis: 500px;
     justify-content: space-around;
 }
 
-li {
+.nav-li {
     font-size: 1rem;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
-.menu-button {
+.menu-icon {
     display: none; 
 }
 
@@ -67,7 +64,7 @@ li {
       display: none;
     }
 
-    .menu-button {
+    .menu-icon {
         display: flex; 
     }
 }
@@ -78,7 +75,12 @@ li {
     }
 }
 
-.mobile-menu ul {
+.mobile-menu .nav-li{
+    font-size: 1rem;
+    color: white;
+}
+
+.side-ul {
     align-self: start;
     display: flex;
     flex-direction: column;
@@ -87,32 +89,12 @@ li {
     padding-left: 4rem;
 }
 
-.mobile-menu li {
-    font-size: 1rem;
-    color: white;
-}
-
-.mobile-menu li:hover {
-    color: palevioletred; 
-}
-
-
-li {
-    transition: color 0.3s ease; 
-}
-  
-
-.menu-button {
+.menu-icon {
     height: 30px;
     padding-right: 1em;
-    background-color: rgba(128, 128, 128, 0);
+    background-color: rgba(200, 106, 106, 0);
     justify-content: end;
 }
-
- .mobile-menu {
-    transform: translateX(100%);
-    transition: transform 0.5s ease, opacity 0.5s ease !important;
-} 
 
 .mobile-menu.clicked {
     transform: translateX(0);

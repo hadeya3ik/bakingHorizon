@@ -15,6 +15,17 @@
     gap: 0.5rem;
 }
 
+.contact-info .phone, .contact-info .email {
+    text-align: end;
+}
+
 .contact-info .phone, .socials .fb {
     padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem; 
+        font-size: 0.6rem;
+    }
 }

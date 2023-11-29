@@ -15,7 +15,7 @@ const Contact = () => {
         <img src={filler} alt="Cake Image"/>
       </div>
       <div className="contact-header">
-        <p>FOR ALL CUSTOM ORDERS PLEASE INQUIRE BELOW AND WE WILL GET BACK TO YOU ASAP</p>
+        <p>For all custom orders please inquire below and we will get back to you</p>
       </div>
       <form action="/submit-form" method="post">
         <input type="text" id="name" name="name" placeholder="Name"/>

@@ -18,12 +18,11 @@
     background-color: blanchedalmond;
     text-transform: uppercase;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Apply transition to both background-color and color */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .slide-show button:hover {
     background-color: pink;
-    
 }
 
 .slide-show-container {
@@ -32,7 +31,7 @@
     padding-left: 1rem;
 }
 
-.slide-show-container img{
+.slide-show-container img {
     display: inline-block;
     height: 300px;
     width: auto;
