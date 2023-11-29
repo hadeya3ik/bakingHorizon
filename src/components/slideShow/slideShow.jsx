@@ -12,7 +12,6 @@ const SlideShow = () => {
           <img key={item.id} src={item.img} alt={`Image ${item.id}`} />
         ))}
         </div>
-        
       </div>
       <button>
         <Link to="/gallery">View More</Link>

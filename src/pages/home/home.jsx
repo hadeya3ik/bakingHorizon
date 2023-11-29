@@ -1,4 +1,3 @@
-import React from 'react';
 import './home.css';
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { BsBalloonHeart } from "react-icons/bs";

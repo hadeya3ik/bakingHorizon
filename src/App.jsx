@@ -5,7 +5,7 @@ import Faq from './pages/faq/faq'
 import Contact from './pages/contact/contact'
 import NavBar from './components/navbar/navBar'
 import Footer from './components/footer/footer'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (

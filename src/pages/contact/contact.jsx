@@ -1,5 +1,6 @@
 import './contact.css'
-import filler from './filler.png'
+import filler from '../../images/filler.png'
+
 const Contact = () => {
   return (
     <div className="contact">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebook } from 'react-icons/fa';
 import './footer.css'
