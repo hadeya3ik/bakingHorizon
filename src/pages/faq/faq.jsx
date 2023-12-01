@@ -3,7 +3,7 @@ import Map from '../../components/map/map'
 
 const Faq = () => {
   return (
-    <div className="faq">
+    <div className="faq flex_center">
         <h>FAQ's</h>
         <div className='qa-cont'>
           <div className="qa">

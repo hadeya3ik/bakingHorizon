@@ -62,10 +62,9 @@ form button {
     background-color: blanchedalmond;
     text-transform: uppercase;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Apply transition to both background-color and color */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
     background-color: pink;
-    
 }

@@ -3,8 +3,8 @@ import filler from '../../images/filler.png'
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <div className="contact-header">
+    <div className="contact flex_center">
+      <div className="contact-header page_header flex_center">
         <h>Contact Us</h>
         <p>Milton, ON.</p>
         <p>bakinghorizon@gmail.com</p>
@@ -14,9 +14,6 @@ const Contact = () => {
         <img src={filler} alt="Cake Image"/>
         <img src={filler} alt="Cake Image"/>
         <img src={filler} alt="Cake Image"/>
-      </div>
-      <div className="contact-header">
-        <p>For all custom orders please inquire below and we will get back to you</p>
       </div>
       <form action="/submit-form" method="post">
         <input type="text" id="name" name="name" placeholder="Name"/>

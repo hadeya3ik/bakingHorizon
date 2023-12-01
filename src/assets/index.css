@@ -2,5 +2,81 @@
 @tailwind components;
 
 body {
-    background-color: rgb(255, 246, 242);
+    background-color: rgb(255, 255, 255);
+}
+
+.flex_center {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;  
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.standard_padding {
+    padding: 3rem 2rem 4rem;
+}
+
+.header__1 {
+    padding-bottom: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.75rem;
+}
+
+.text__style_1 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1rem;;
+}
+
+.text__style_2 {
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+    .standard_padding {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .header__1 {
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .text__style_1 {
+        font-size: 0.8rem;
+    }
+    
+    .text__style_2 {
+        font-size: 1rem;
+    }
+
+    .button_style {
+        margin-top: 1rem;
+    }
+}
+
+.button_style {
+    border: none;
+    margin-top: 3rem;
+    border-radius: 25px;
+    padding: 1rem 3rem;
+    background-color: palegoldenrod;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button_style:hover {
+    background-color: pink;
+}
+
+.colorA{
+    background-color: rgb(224, 229, 255);
 }

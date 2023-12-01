@@ -1,8 +1,8 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
-import { Link } from "react-router-dom";
 
 const NavItem = ({ to, children, onClick, isActive }) => {
   return (
@@ -24,16 +24,25 @@ const navItems = [
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [activeNavItem, setActiveNavItem] = useState("/");
+  const location = useLocation();
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const handleNavItemClick = (to) => {
-    setActiveNavItem(to);
-    handleNav();
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setNav(false);
+    }
   };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -46,8 +55,8 @@ const NavBar = () => {
             <NavItem
               key={item.to}
               to={item.to}
-              onClick={() => handleNavItemClick(item.to)}
-              isActive={activeNavItem === item.to}>
+              onClick={() => handleNav()}
+              isActive={location.pathname === item.to}>
               {item.text}
             </NavItem>
           ))}
@@ -62,8 +71,8 @@ const NavBar = () => {
             <NavItem
               key={item.to}
               to={item.to}
-              onClick={() => handleNavItemClick(item.to)}
-              isActive={activeNavItem === item.to}>
+              onClick={() => handleNav()}
+              isActive={location.pathname === item.to}>
               {item.text}
             </NavItem>
           ))}

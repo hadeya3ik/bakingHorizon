@@ -7,56 +7,30 @@
     background-position: center bottom;
 }
 
-.about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    padding-bottom: 4rem;
+#about_us p {
+    max-width: 900px;
 }
 
-.about-us h2 {
-    font-size: 1.75rem;
-    padding-bottom: 1rem;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 900;
+#tri_highlights {
+    gap: 3rem;
 }
 
-.about-us p {
-    text-align: center;
-    font-family: 'Nanum Myeongjo', serif;
-    max-width: 700px;
+#tri_highlights p {
+    font-size: 0.8rem;
 }
 
-.info {
-    background-color: rgb(255, 230, 226) ;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    display: flex;
-    padding: 3rem;
-    align-items: center;
+#tri_highlights h4 {
+    padding: 0.75rem 0rem;
 }
 
 @media (max-width: 768px) {
-    .info{
+    #tri_highlights {
         flex-direction: column;
+        gap: 3rem;
     }
-}
 
-.info h4 { 
-    margin: 0.35rem;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-.info p {
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 0.75rem;;
-}
-
-.info .bullet {
-    /* width: 500px;  */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    #tri_highlights p {
+        max-width: 500px;
+    }
+    
 }

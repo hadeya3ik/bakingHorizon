@@ -3,7 +3,7 @@ import './menu.css'
 const Menu = () => {
   return (
     <>
-      <div className="menu">
+      <div className="menu flex_center page_padding">
         <h>Menu</h>
         <h2>- Cake Flavors -</h2>
         <div className="flavors-section">
