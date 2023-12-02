@@ -2,11 +2,15 @@ import './menu.css'
 
 const Menu = () => {
   return (
-    <>
-      <div className="menu flex_center page_padding">
-        <h>Menu</h>
-        <h2>- Cake Flavors -</h2>
-        <div className="flavors-section">
+
+      <div id="menu" className="col flex_center ">
+        <div className="menu_hero flex_center col">
+          <h className="page_heading">Menu</h>
+          <p>All of our cakes contain wheat, dairy, and eggs. Please note that all are made in an environment where nuts are present. For inquiries about custom flavours, please contact us for availability and price. </p>
+        </div>
+        <h2 className="header_line">Cake Flavors</h2>
+        <hr className="line" />
+        <div id="flavours" className="flex_center col">
           <div className="flavor">
             <h3>Vanilla</h3>
             <p>A classic comforting favorite with a timeless, comforting taste.</p>
@@ -36,8 +40,9 @@ const Menu = () => {
             <p>A coffee lovers delight, a balance of bitter and sweet for a sophisticated palate.</p>
           </div>
         </div>
-        <h2>- Buttercream Flavors -</h2>
-        <div className="flavors-section">  
+        <h2 className="header_line">Buttercream Flavors</h2>
+        <hr className="line" />
+        <div id="flavours" className="flex_center col">  
           <div className="flavor">
             <h3>Salted Caramel</h3>
             <p>A blissful blend of sweet caramel with a hint of sea salt.</p>
@@ -63,16 +68,20 @@ const Menu = () => {
             <p>A delightful blend of cookies and creamy goodness.</p>
           </div>
         </div>
-        <h2>- Cake Sizing Guide -</h2>
-        <div className='sizing'>
-          <p>4" starts at $99 (4-6 servings)</p>
-          <p>5" starts at $104 (6-8 servings)</p>
-          <p>6" starts at $108 (8-10 servings)</p>
-          <p>7" starts at $126 (11-15 servings)</p>
-          <p>8” starts at $144 (16-20 servings)</p>
+        <div className="menu_container">
+          <h2 className="header__1">Cake Sizing Guide</h2>
+          <div id="sizing_guide" className='flex_center'>
+            <p id="sizing_info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="sizes">
+              <p>4" starts at $99 (4-6 servings)</p>
+              <p>5" starts at $104 (6-8 servings)</p>
+              <p>6" starts at $108 (8-10 servings)</p>
+              <p>7" starts at $126 (11-15 servings)</p>
+              <p>8” starts at $144 (16-20 servings)</p>
+            </div>
+          </div>
         </div>
       </div>
-    </>
   )
 }
 

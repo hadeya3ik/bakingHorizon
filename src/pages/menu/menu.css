@@ -1,35 +1,4 @@
-.menu h {
-    background-color: rgb(247, 231, 255);
-    width: 100vw;
-    text-align: center;
-    padding: 3rem;
-    font-size: 2rem;
-    font-family: 'Nanum Myeongjo', serif;
-}
-
-.menu h2 {
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-family: 'Nanum Myeongjo', serif;
-}
-
-.flavors-section, .menu, .sizing{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.flavors-section {
-    padding: 2rem;
-    padding-top: 0;
-    gap: 1rem;
-}
-
-.menu {
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-}
-
-.menu h3 {
+#menu h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
@@ -37,18 +6,82 @@
     font-size: 0.85rem;
 }
 
-.menu p {
+#menu p {
+    max-width: 600px;
     text-align: center;
     font-style: italic;
     letter-spacing: 1px;
     font-size: 0.75rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
-.sizing {
-    gap: 0.5rem;
-    padding-bottom: 4rem;
+#flavours p {
+    padding-bottom: 1.5rem;
 }
 
-.sizing p {
+#menu h2 {
+    padding-top: 2rem;
+}
+
+#menu .header_line {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+}
+
+#sizes p {
+    text-align: left;
+    white-space: nowrap;
+}
+
+#sizing_guide {
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.menu_container, .menu_hero {
+    background-color: antiquewhite;
+    padding-bottom: 3rem;
+    width: 100vw;
+}
+
+.menu_hero p {
+    padding-top: 1rem;
+}
+
+.menu_hero {
+    padding-top: 2rem;
+}
+
+#sizing_guide p {
+    padding: 0px 2rem;
     font-style: normal;
+    max-width: 400px;
+}
+
+@media (max-width: 980px) {
+    #sizing_guide {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    #sizes p {
+        text-align: center;
+    }
+
+    #sizing_guide p {
+        padding: 0 2rem;
+        max-width: 700px;
+    }
+
+    #menu {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .menu_container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }

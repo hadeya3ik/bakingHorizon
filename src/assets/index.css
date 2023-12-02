@@ -24,7 +24,17 @@ body {
     padding: 3rem 2rem 4rem;
 }
 
-.header__1 {
+#menu {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.page_heading {
+    margin-bottom: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2rem;
+}
+
+.header__1, .header_line {
     padding-bottom: 2rem;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 1.75rem;
@@ -41,12 +51,21 @@ body {
     font-size: 1.15rem;
 }
 
+.line {
+    width: 5%; 
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    border: none;
+    height: 0.75px;
+    background-color: #000;
+}
+
 @media (max-width: 768px) {
     .standard_padding {
         padding: 2rem 1rem 3rem;
     }
 
-    .header__1 {
+    .header__1, .header_line  {
         padding-bottom: 1rem;
         font-size: 1.5rem;
     }
@@ -69,14 +88,5 @@ body {
     margin-top: 3rem;
     border-radius: 25px;
     padding: 1rem 3rem;
-    background-color: palegoldenrod;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button_style:hover {
-    background-color: pink;
-}
-
-.colorA{
-    background-color: rgb(224, 229, 255);
 }
