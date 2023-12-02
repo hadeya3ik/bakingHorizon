@@ -20,6 +20,10 @@
     padding-bottom: 1.5rem;
 }
 
+#flavours {
+    padding-bottom: 2rem;
+}
+
 #menu h2 {
     padding-top: 2rem;
 }
@@ -27,16 +31,6 @@
 #menu .header_line {
     padding-top: 3rem;
     padding-bottom: 0rem;
-}
-
-#sizes p {
-    text-align: left;
-    white-space: nowrap;
-}
-
-#sizing_guide {
-    justify-content: space-evenly;
-    gap: 1rem;
 }
 
 .menu_container, .menu_hero {
@@ -53,35 +47,27 @@
     padding-top: 2rem;
 }
 
-#sizing_guide p {
-    padding: 0px 2rem;
-    font-style: normal;
-    max-width: 400px;
+#sizing_guide {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
 }
 
-@media (max-width: 980px) {
-    #sizing_guide {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-    }
+#sizes p {
+    text-align: center;
+}
 
-    #sizes p {
-        text-align: center;
-    }
+#sizing_guide p {
+    padding: 0 2rem;
+    max-width: 700px;
+}
 
-    #sizing_guide p {
-        padding: 0 2rem;
-        max-width: 700px;
-    }
+#menu {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
 
-    #menu {
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
-
-    .menu_container {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
+.menu_container {
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
