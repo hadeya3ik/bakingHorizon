@@ -1,43 +1,23 @@
 .faq h {
     background-color: rgb(255, 243, 231);
     width: 100vw;
-    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.qa-cont {
+    text-align: start;
     padding: 3rem;
-    font-size: 2rem;
-    font-family: 'Nanum Myeongjo', serif;
 }
 
-.faq, .qa-cont {    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.qa-cont{
-    align-items: start;
-    padding: 3rem;
-    gap: 2.5rem;
-}
-
-.qa h3 {
-    font-size: 1.2rem;
+.qa h3, .map h3 {
+    font-size: 1rem;
     font-family: 'Nanum Myeongjo', serif;
     padding-bottom: 0.5rem;
 }
 
-
-.flavors-section {
-    padding: 2.5rem;
-    padding-top: 0;
-    gap: 1rem;
-}
-
-.menu {
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-}
-
-.qa p {
+.qa p, .map p  {
     max-width: 750px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    padding-bottom: 3rem;
 }

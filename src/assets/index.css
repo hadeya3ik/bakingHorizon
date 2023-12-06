@@ -32,6 +32,18 @@ body {
     margin-bottom: 1rem;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.heading_text {
+    padding-top: 1rem;
+    max-width: 600px;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .header__1, .header_line {
@@ -45,10 +57,15 @@ body {
     font-size: 1rem;;
 }
 
-.text__style_2 {
+.text__style_2, .text__style_3 {
     text-transform: uppercase;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     font-size: 1.15rem;
+}
+
+.text__style_3 {
+    font-size: 0.85rem;
+    text-transform: none;
 }
 
 .line {

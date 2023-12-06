@@ -6,7 +6,7 @@ const Menu = () => {
       <div id="menu" className="col flex_center ">
         <div className="menu_hero flex_center col">
           <h className="page_heading">Menu</h>
-          <p>All of our cakes contain wheat, dairy, and eggs. Please note that all are made in an environment where nuts are present. For inquiries about custom flavours, please contact us for availability and price. </p>
+          <p className="heading_text">All of our cakes contain wheat, dairy, and eggs. Please note that all are made in an environment where nuts are present. For inquiries about custom flavours, please contact us for availability and price. </p>
         </div>
         <h2 className="header_line">Cake Flavors</h2>
         <hr className="line" />

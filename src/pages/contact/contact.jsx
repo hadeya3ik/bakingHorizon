@@ -3,27 +3,39 @@ import filler from '../../images/filler.png'
 
 const Contact = () => {
   return (
-    <div className="contact flex_center">
-      <div className="contact-header page_header flex_center">
-        <h>Contact Us</h>
-        <p>Milton, ON.</p>
-        <p>bakinghorizon@gmail.com</p>
+    <div className="flex_center col">
+      <div className="flex_center col">
+        <h className="page_heading" >Contact Us</h>
+        <p className="contact_info text__style_3">For in queries, fill up a contact form or email us at</p>
+        <p className="text__style_3">bakinghorizon@gmail.com</p>
       </div>
-
-      <div className="contact-gallery">
-        <img src={filler} alt="Cake Image"/>
-        <img src={filler} alt="Cake Image"/>
-        <img src={filler} alt="Cake Image"/>
+      <div className="box flex_center contact-gallery">
+        <div className="gallery-container flex_center">
+          <img className="image" src={filler} alt="Cake Image"/>
+          <img className="image" src={filler} alt="Cake Image"/>
+          <img className="image" src={filler} alt="Cake Image"/>
+        </div>
       </div>
-      <form action="/submit-form" method="post">
+      <form className="text__style_3 flex_center col" action="/submit-form" method="post">
         <input type="text" id="name" name="name" placeholder="Name"/>
         <input type="email" id="email" name="email" placeholder="Email" required/>
         <input type="tel" id="phone" name="phone" placeholder="Phone number"/>
         <textarea id="comment" name="comment" placeholder="Comment"></textarea>
-        <button type="submit">Send</button>
+        <div className="fill"> 
+          <button id="submit-button" className="button_style" type="submit">Send</button>
+        </div>
       </form>
     </div>
   );
 }
+
+// const Contact = () => {
+//   return (
+//   <div className='flex_center col box'>
+//     <div className="inner"></div>
+//     <div className="inner"></div>
+//     <div className="inner"></div>
+//   </div>);
+// }
 
 export default Contact;

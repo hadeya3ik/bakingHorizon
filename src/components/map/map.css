@@ -1,33 +1,25 @@
 .map {
-    padding: 2rem 1rem;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     background-color: antiquewhite;
-    justify-content: center;
-    gap: 3rem;
+    padding: 3rem;
+    width: 100vw;
 }
 
-.map h3 {
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 700;
-    font-style: italic;
-    white-space: no-wrap;
-    text-align: center;
+
+iframe {
+    width: 600px;
+    height: 300px; 
+    filter: grayscale(50%) invert(92%) contrast(83%);
 }
 
-.map img{
-    width: 400px;
+@media (max-width: 650px) {
+    iframe { 
+        width: 500px;
+    }
 }
 
-.map ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
-.map li {
-    text-transform: none;
+@media (max-width: 500px) {
+    iframe { 
+        width: 400px;
+    }
 }

@@ -1,5 +1,5 @@
 import "./slideShow.css";
-import {data} from './mockData.jsx'
+import {data} from './slideShowData.jsx'
 import { Link } from "react-router-dom";
 
 const SlideShow = () => {

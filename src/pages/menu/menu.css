@@ -6,16 +6,6 @@
     font-size: 0.85rem;
 }
 
-#menu p {
-    max-width: 600px;
-    text-align: center;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 0.75rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-
 #flavours p {
     padding-bottom: 1.5rem;
 }
@@ -37,14 +27,6 @@
     background-color: antiquewhite;
     padding-bottom: 3rem;
     width: 100vw;
-}
-
-.menu_hero p {
-    padding-top: 1rem;
-}
-
-.menu_hero {
-    padding-top: 2rem;
 }
 
 #sizing_guide {

@@ -1,5 +1,5 @@
 import Home from './pages/home/home'
-import Gallery from './pages/gallery'
+import Gallery from './pages/gallery/gallery'
 import Menu from './pages/menu/menu'
 import Faq from './pages/faq/faq'
 import Contact from './pages/contact/contact'
