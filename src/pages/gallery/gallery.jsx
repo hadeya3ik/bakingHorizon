@@ -1,21 +1,43 @@
 import './gallery.css'
-import { data } from './galleryData.jsx' 
+import { cupcakeData, dholkiData, floralData, babyShowerData, charactersData, kidsData, signatureData, data } from './galleryData.jsx' 
+import { useState } from 'react';
+
+const filterItems = [
+  { data: signatureData, text: "signature" },
+  { data: babyShowerData, text: "baby showers" },
+  { data: floralData, text: "floral" },
+  { data: kidsData, text: "kids" },
+  { data: charactersData, text: "characters" },
+  { data: dholkiData, text: "dholki" },
+  { data: cupcakeData, text: "cupcakes" },
+  { data: data, text: "etc" }
+];
+
 
 const Gallery = () => {
+  const [filter, setFilter] = useState('signature');
+
+  function handleFilter (new_filter) {
+    setFilter(new_filter);
+  }
+
+  const filteredData = filterItems.filter((item) => item.text == filter)[0].data;
+
   return (
     <div className="flex_center col">
       <div className="flex_center col">
         <h className="page_heading">Gallery</h>
       </div>
       <div>
-        <ul className='text__style_3'>
-          <li>baby shower's</li>
+        <ul id="filter" className='text__style_3'>
+          {filterItems.map((item) => (<li onClick={()=>handleFilter(item.text)} 
+          className={item.text == filter ? "active" : ""} key={item.data}> {item.text} </li>))}
         </ul>
       </div>
       <div id="gallery">
-        {data.map(item => (
-        <img key={item.id} src={item.img} alt={`Image ${item.id}`} />
-          ))}
+        {filteredData.map(item => (
+          <img key={item.id} src={item.img} alt={`Image ${item.id}`} />
+        ))}
       </div>
     </div>
   );
