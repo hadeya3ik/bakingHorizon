@@ -18,6 +18,16 @@
     padding-top: 2rem;
 }
 
+/* #menu .flavor p {
+    max-width: 600px;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+} */
+
 #menu .header_line {
     padding-top: 3rem;
     padding-bottom: 0rem;
@@ -53,3 +63,10 @@
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
+#sizing_guide p {
+    max-width: 650px;
+    font-size: 0.75rem;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+

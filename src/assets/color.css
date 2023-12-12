@@ -3,9 +3,11 @@
     background-color: white;
 }
 
-.mobile-menu .nav-li:hover, .nav-li:hover, .top-ul .active, .side-ul .active{
+.mobile-menu .nav-li:hover, .nav-li:hover, .top-ul .active, .side-ul .active, #filter li.active {
     color: pink;
 }
+
+
 
 .mobile-menu {
     background-color: rgba(221, 221, 221, 0.845);

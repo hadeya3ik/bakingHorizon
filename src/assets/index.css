@@ -35,8 +35,7 @@ body {
     padding-top: 2rem;
 }
 
-.heading_text {
-    padding-top: 1rem;
+.heading_text, .menu_text {
     max-width: 600px;
     text-align: center;
     font-style: italic;
@@ -44,6 +43,10 @@ body {
     font-size: 0.75rem;
     padding-right: 2rem;
     padding-left: 2rem;
+}
+
+.heading_text {
+    padding-top: 1rem;
 }
 
 .header__1, .header_line {
