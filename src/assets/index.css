@@ -35,6 +35,12 @@ body {
     padding-top: 2rem;
 }
 
+@media (max-width: 768px) {
+    .page_heading {
+        font-size: 1.70rem;
+    }
+}
+
 .heading_text, .menu_text {
     max-width: 600px;
     text-align: center;
@@ -57,7 +63,7 @@ body {
 
 .text__style_1 {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 1rem;;
+    font-size: 0.9rem;
 }
 
 .text__style_2, .text__style_3 {
