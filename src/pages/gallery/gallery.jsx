@@ -1,11 +1,8 @@
 import './gallery.css'
 import { cupcakeData, dholkiData, floralData, babyShowerData, charactersData, kidsData, signatureData, data } from './galleryData.jsx' 
 import { useState } from 'react';
-import Modal from 'react-modal'
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-import { AiOutlineCloseCircle } from "react-icons/ai";
-import CloseButton from 'react-bootstrap/CloseButton';
+import Modal from '../../components/modal/Modal'
+
 
 const filterItems = [
   { data: signatureData, text: "signature" },
@@ -21,6 +18,8 @@ const filterItems = [
 const Gallery = () => {
   const [filter, setFilter] = useState('signature');
   const [animate, setAnimate] = useState(true);
+  const [modalOpen, setModal] = useState(false);
+  const [currPos, setPos] = useState(0);
 
   // sets the filter + animation
   function handleFilter(new_filter) {
@@ -33,7 +32,21 @@ const Gallery = () => {
     }
   }
 
+  // the current filter applied
   const filteredData = filterItems.filter((item) => item.text == filter)[0].data;
+  const maxPos = filteredData.length
+
+  function nextImage() {
+    if (currPos < maxPos - 1) {
+      setPos(currPos + 1);
+    }
+  }
+
+  function prevImage() {
+    if (currPos > 0) {
+      setPos(currPos - 1);
+    }
+  }
 
   return (
     <div className="flex_center col">
@@ -42,21 +55,28 @@ const Gallery = () => {
       </div>
       <div>
         <ul id="filter" className='text__style_3 flex_center'>
-          {filterItems.map((item) => (<li onClick={()=>handleFilter(item.text)} 
-          className={item.text == filter ? "active" : ""} key={item.data}> {item.text} </li>))}
+          {filterItems.map((item) => (<li onClick={()=> handleFilter(item.text)} 
+          className={item.text == filter ? "active" : ""} key={item.key}> {item.text} </li>))}
         </ul>
       </div>
       <div id="gallery">
-  {filteredData.map(item => (
-    <img
-      key={item.id}
-      src={item.img}
-      alt={`Image ${item.id}`}
-      className={animate ? 'animate' : ''}
-    />
-  ))}
-</div>
-    </div>
+        {filteredData.map(item => (
+          <img
+            key={item.id}
+            src={item.img}
+            alt={`Image ${item.id}`}
+            className={animate ? 'animate' : ''}
+            onClick={()=> setModal(true) }
+          />
+        ))}
+      </div>
+      {modalOpen && <Modal 
+            img={filteredData[currPos].img} 
+            closeModal={() => setModal(false)} 
+            nextImage={nextImage}
+            prevImage={prevImage}
+            />}
+      </div>
   );
 }
 
