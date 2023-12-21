@@ -1,0 +1,23 @@
+.faq h {
+    background-color: rgb(255, 243, 231);
+    width: 100vw;
+    padding-bottom: 2rem;
+}
+
+.qa-cont {
+    text-align: start;
+    padding: 3rem;
+}
+
+.qa h3, .map h3 {
+    font-size: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-bottom: 0.5rem;
+}
+
+.qa p, .map p  {
+    max-width: 750px;
+    font-size: 0.75rem;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    padding-bottom: 3rem;
+}

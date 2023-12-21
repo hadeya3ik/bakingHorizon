@@ -1,0 +1,41 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(184, 184, 184, 0.881);
+    position: fixed;
+    color: black;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+
+.exit_modal {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.image_display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.modal img {
+    height: 450px;
+    width: auto;
+}
+
+.modal > * {
+    z-index: 10000;
+}
+
+.exit_icon, .right_arrow, .left_arrow {
+    cursor: pointer;
+}
