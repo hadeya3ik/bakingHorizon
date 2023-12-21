@@ -1,6 +1,6 @@
 import './gallery.css'
 import { cupcakeData, dholkiData, floralData, babyShowerData, charactersData, kidsData, signatureData, data } from './galleryData.jsx' 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../../components/modal/Modal'
 
 
@@ -28,15 +28,16 @@ const Gallery = () => {
       setTimeout(() => {
         setFilter(new_filter); 
         setAnimate(true);
-      }, 5); // Short timeout to ensure the class is re-applied
+      }, 5);
     }
   }
-
+  
   // the current filter applied
-  const filteredData = filterItems.filter((item) => item.text == filter)[0].data;
-  const maxPos = filteredData.length
-
+  let filteredData = filterItems.filter((item) => item.text == filter)[0].data;
+  let maxPos = filteredData.length;
+  
   function nextImage() {
+    console.log(maxPos);
     if (currPos < maxPos - 1) {
       setPos(currPos + 1);
     }
@@ -51,7 +52,7 @@ const Gallery = () => {
   return (
     <div className="flex_center col">
       <div className="flex_center col">
-        <h className="page_heading">Gallery</h>
+        <h1 className="page_heading">Gallery</h1>
       </div>
       <div>
         <ul id="filter" className='text__style_3 flex_center'>
@@ -66,7 +67,10 @@ const Gallery = () => {
             src={item.img}
             alt={`Image ${item.id}`}
             className={animate ? 'animate' : ''}
-            onClick={()=> setModal(true) }
+            onClick={() => {
+              setPos(item.key);
+              setModal(true);
+            }}
           />
         ))}
       </div>

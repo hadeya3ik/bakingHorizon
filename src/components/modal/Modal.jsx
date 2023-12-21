@@ -1,6 +1,4 @@
 import "./modal.css"
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";

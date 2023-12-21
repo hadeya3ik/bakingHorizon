@@ -37,6 +37,8 @@ nav {
     font-size: 1.65rem;
     white-space: nowrap; 
     font-family: 'Nanum Myeongjo', serif;
+    /* font-family: 'Secular One', sans-serif; */
+    letter-spacing: 0.5rem;
 }
 
 .top-ul, .side-ul {
