@@ -1,31 +1,33 @@
 .top-nav, .colorA{
-    background-color: rgba(245,206,189,255);
-    color: rgba(202,132,110,255);
+    background-color: rgb(245,206,189);
+    color: rgb(202,132,110);
 }
 
 body {
-    background-color: rgba(245,241,238);
+    background-color: rgb(237, 234, 231);
     color: rgb(182, 142, 107);
 }
 
 .mobile-menu .nav-li:hover, .nav-li:hover, .top-ul .active, .side-ul .active, #filter li.active {
-    color: pink;
+    color: rgb(130, 85, 72);
 }
 
 .mobile-menu {
-    background-color: rgba(221, 221, 221, 0.845);
+    background-color: rgb(202,132,110, 0.95);
 }
 
 .mobile-menu .nav-li{
-    color: white;
+    color: rgb(245,206,189);
 }
 
 .footer {
-    background-color: rgb(227, 234, 249);
+    background-color: rgb(206, 216, 196);
+    color: rgb(70, 79, 69);
 }
 
 .button_style {
-    background-color: rgb(224, 229, 255);;
+    background-color: rgb(206, 216, 196);
+    color: rgb(70, 79, 69);
 }
 
 .button_style:hover {
@@ -33,6 +35,26 @@ body {
 }
 
 form textarea, form input {
-    border: 1px solid #ccc;
-    background-color: rgb(194, 138, 214);
+    box-shadow: 0 4px 8px rgba(157, 147, 147, 0.1);
+    /* border: 1px solid rgb(226, 214, 197); */
+    background-color: rgb(239, 238, 236);
+}
+
+.menu_hero {
+    background-color: rgb(209, 213, 200);
+    color: rgb(70, 79, 69);
+}
+
+.faq h {
+    background-color: rgb(206, 216, 196);
+    color: rgb(70, 79, 69);
+}
+
+
+.map, .menu_container {
+    background-color: antiquewhite;
+}
+
+nav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

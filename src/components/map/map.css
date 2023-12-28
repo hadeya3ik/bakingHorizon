@@ -1,5 +1,4 @@
 .map {
-    background-color: antiquewhite;
     padding: 3rem;
     width: 100vw;
 }
@@ -8,7 +7,7 @@
 iframe {
     width: 600px;
     height: 300px; 
-    filter: grayscale(50%) invert(92%) contrast(83%);
+    /* filter: grayscale(0%) invert(92%) contrast(83%); */
 }
 
 @media (max-width: 650px) {
