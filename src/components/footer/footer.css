@@ -1,0 +1,30 @@
+.footer {
+    width: 100vw;
+    height: 4rem;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    font-size: 0.75rem;
+}
+
+.socials .ig a, .socials .fb a {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.contact-info .phone, .contact-info .email {
+    text-align: end;
+}
+
+.contact-info .phone, .socials .fb {
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem; 
+        font-size: 0.6rem;
+    }
+}

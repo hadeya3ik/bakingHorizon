@@ -1,0 +1,34 @@
+.hero {
+    background-image: url("../../images/hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 25rem;
+    background-position: center bottom;
+}
+
+#about_us p {
+    max-width: 900px;
+}
+
+#tri_highlights {
+    gap: 3rem;
+}
+
+
+
+#tri_highlights h4 {
+    padding: 0.75rem 0rem;
+}
+
+@media (max-width: 768px) {
+    #tri_highlights {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #tri_highlights p {
+        max-width: 500px;
+    }
+    
+}
