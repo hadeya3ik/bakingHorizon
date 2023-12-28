@@ -29,13 +29,4 @@ const Contact = () => {
   );
 }
 
-// const Contact = () => {
-//   return (
-//   <div className='flex_center col box'>
-//     <div className="inner"></div>
-//     <div className="inner"></div>
-//     <div className="inner"></div>
-//   </div>);
-// }
-
 export default Contact;

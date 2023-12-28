@@ -64,6 +64,10 @@ nav {
     .menu-icon {
         display: flex; 
     }
+
+    .logo {
+        font-size: 1.3rem;
+    }
 }
  
 @media (min-width: 768px) {

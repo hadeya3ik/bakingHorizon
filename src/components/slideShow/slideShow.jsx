@@ -14,7 +14,7 @@ const SlideShow = () => {
         </div>
       </div>
       <button className="button_style">
-        <Link to="/gallery" className='flex_center text__style_2'>View More</Link>
+        <Link to="/gallery" className='flex_center text__style_3'>View More</Link>
       </button>
     </div>
   )
