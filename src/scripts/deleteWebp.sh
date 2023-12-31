@@ -1,5 +1,5 @@
 #!/bin/bash
 
-for dir in */; do
+for dir in ../images/dec31gallery/*/; do
     (cd "$dir" && rm *.webp)
 done
