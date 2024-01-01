@@ -1,18 +1,16 @@
 import './gallery.css'
-import { cupcakeData, dholkiData, floralData, babyShowerData, charactersData, kidsData, signatureData, data } from './galleryData.jsx' 
-import { useEffect, useState } from 'react';
+import { cupcakes, dholki, floral, baby_shower, characters, kids, signature } from '../../scripts/test.jsx' 
+import { useState } from 'react';
 import Modal from '../../components/modal/Modal'
-import LazyLoad from 'react-lazy-load';
 
 const filterItems = [
-  { data: signatureData, text: "signature" },
-  { data: babyShowerData, text: "baby showers" },
-  { data: floralData, text: "floral" },
-  { data: kidsData, text: "kids" },
-  { data: charactersData, text: "characters" },
-  { data: dholkiData, text: "dholki" },
-  { data: cupcakeData, text: "cupcakes" },
-  { data: data, text: "etc" }
+  { data: signature, text: "signature" },
+  { data: baby_shower, text: "baby showers" },
+  { data: floral, text: "floral" },
+  { data: kids, text: "kids" },
+  { data: characters, text: "characters" },
+  { data: dholki, text: "dholki" },
+  { data: cupcakes, text: "cupcakes" },
 ];
 
 const Gallery = () => {

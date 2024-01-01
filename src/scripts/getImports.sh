@@ -22,8 +22,12 @@ for dir in ../images/dec31gallery/*/; do
     echo "export const "$(basename $dir)" = [" >> "$output_file" 
     (cd $dir && for file in * ; do
         baseFile=$(basename $file .jpg)
-        echo "{img: $baseFile, img_hd : $baseFile"_hd", key: $counter} , " >> "$output_file"
-        ((counter++))
+
+        if [ "${file##*.}" = "jpg" ]; then
+            echo "{img: $baseFile, img_hd : $baseFile"_hd", key: $counter} , " >> "$output_file"
+            ((counter++))
+        fi
+        
         done)
     echo "]" >> "$output_file"
 done
