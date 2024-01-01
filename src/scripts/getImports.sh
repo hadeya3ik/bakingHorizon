@@ -7,9 +7,9 @@ for dir in ../images/dec31gallery/*/; do
         (cd "$dir" && 
             for file in *; do
                 if [ "${file##*.}" = "webp" ]; then
-                    echo "import $(basename "$file" .webp) from ${dir}${file}" >> "$output_file"
+                    echo "import $(basename "$file" .webp) from '${dir}${file}';" >> "$output_file"
                 else 
-                    echo "import $(basename "$file" .jpg)_hd from ${dir}${file}" >> "$output_file"
+                    echo "import $(basename "$file" .jpg)_hd from '${dir}${file}';" >> "$output_file"
                 fi
         done)
     echo
@@ -22,7 +22,7 @@ for dir in ../images/dec31gallery/*/; do
     echo "export const "$(basename $dir)" = [" >> "$output_file" 
     (cd $dir && for file in * ; do
         baseFile=$(basename $file .jpg)
-        echo "{img: $baseFile.jpg, img_hd : $baseFile.webp, key: $counter} , " >> "$output_file"
+        echo "{img: $baseFile, img_hd : $baseFile"_hd", key: $counter} , " >> "$output_file"
         ((counter++))
         done)
     echo "]" >> "$output_file"
