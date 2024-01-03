@@ -1,11 +1,12 @@
 import './gallery.css'
 import { cupcakes, dholki, floral, baby_shower, characters, kids, signature } from '../../scripts/test.jsx' 
+//import { cupcakes, dholki, florall, baby_shower, characters, kids, signature } from './galleryData' 
 import { useState } from 'react';
 import Modal from '../../components/modal/Modal'
 
 const filterItems = [
-  { data: signature, text: "signature" },
   { data: baby_shower, text: "baby showers" },
+  { data: signature, text: "signature" },
   { data: floral, text: "floral" },
   { data: kids, text: "kids" },
   { data: characters, text: "characters" },

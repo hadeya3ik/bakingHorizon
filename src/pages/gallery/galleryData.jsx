@@ -59,7 +59,6 @@ import butterfly_name_3 from './../../images/gallery/floral/butterfly_name_3.web
 import butterfly_purple_2 from './../../images/gallery/floral/butterfly_purple_2.webp';
 import daisy from './../../images/gallery/floral/daisy.webp';
 import fairy_garden from './../../images/gallery/floral/fairy_garden.webp';
-import floral from './../../images/gallery/floral/floral.webp';
 import floral_2 from './../../images/gallery/floral/floral_2.webp';
 import floral_4 from './../../images/gallery/floral/floral_4.webp';
 import floral_gold from './../../images/gallery/floral/floral_gold.webp';
@@ -154,7 +153,6 @@ import butterfly_name_3_hd from './../../images/gallery/floral/butterfly_name_3.
 import butterfly_purple_2_hd from './../../images/gallery/floral/butterfly_purple_2.jpg';
 import daisy_hd from './../../images/gallery/floral/daisy.jpg';
 import fairy_garden_hd from './../../images/gallery/floral/fairy_garden.jpg';
-import floral_hd from './../../images/gallery/floral/floral.jpg';
 import floral_2_hd from './../../images/gallery/floral/floral_2.jpg';
 import floral_4_hd from './../../images/gallery/floral/floral_4.jpg';
 import floral_gold_hd from './../../images/gallery/floral/floral_gold.jpg';
@@ -188,13 +186,13 @@ import lace_black_hd from './../../images/gallery/signature/lace_black.jpg';
 import doll_hd from './../../images/gallery/kids/doll.jpg';
 import doll_2_hd from './../../images/gallery/kids/doll_2.jpg';
 
-export const cupcakeData = [
+export const cupcakes = [
     { img: boss_baby_cc, img_hd: boss_baby_cc_hd, key: 0 },
     { img: bee_cc, img_hd: bee_cc_hd, key: 1 },
     { img: girl_boy_cc, img_hd: girl_boy_cc_hd, key: 2 }
 ];
 
-export const dholkiData = [
+export const dholki = [
     { img: dholki_green_orange, img_hd: dholki_green_orange_hd, key: 0 },
     { img: dholki_orange_pink, img_hd: dholki_orange_pink_hd, key: 1 },
     { img: dholki_pink_orange, img_hd: dholki_pink_orange_hd, key: 2 },
@@ -202,7 +200,7 @@ export const dholkiData = [
     { img: orange_white_dholki, img_hd: orange_white_dholki_hd, key: 4 }
 ];
 
-export const floralData = [
+export const florall = [
     { img: bridal, img_hd: bridal_hd, key: 0 },
     { img: butterfly, img_hd: butterfly_hd, key: 1 },
     { img: butterfly_2, img_hd: butterfly_2_hd, key: 2 },
@@ -212,14 +210,13 @@ export const floralData = [
     { img: butterfly_purple_2, img_hd: butterfly_purple_2_hd, key: 6 },
     { img: daisy, img_hd: daisy_hd, key: 7 },
     { img: fairy_garden, img_hd: fairy_garden_hd, key: 8 },
-    { img: floral, img_hd: floral_hd, key: 9 },
     { img: floral_2, img_hd: floral_2_hd, key: 10 },
     { img: floral_4, img_hd: floral_4_hd, key: 11 },
     { img: floral_gold, img_hd: floral_gold_hd, key: 12 },
     { img: bouqet, img_hd: bouqet_hd, key: 13 },
 ];
 
-export const babyShowerData = [
+export const baby_shower = [
     { img: bear, img_hd: bear_hd, key: 0 },
     { img: bear_ballon, img_hd: bear_ballon_hd, key: 1 },
     { img: bear_dress, img_hd: bear_dress_hd, key: 2 },
@@ -232,7 +229,7 @@ export const babyShowerData = [
     { img: ladder_bear, img_hd: ladder_bear_hd, key: 9 },
 ];
 
-export const charactersData = [
+export const characters = [
     { img: boss_baby, img_hd: boss_baby_hd, key: 0 },
     { img: coco_melon, img_hd: coco_melon_hd, key: 1 },
     { img: cars, img_hd: cars_hd, key: 2 },
@@ -244,7 +241,7 @@ export const charactersData = [
     { img: dragon_ball, img_hd: dragon_ball_hd, key: 8 },
 ];
 
-export const kidsData = [
+export const kids = [
     { img: astranout, img_hd: astranout_hd, key: 0 },
     { img: dino, img_hd: dino_hd, key: 1 },
     { img: dino_cuete, img_hd: dino_cuete_hd, key: 2 },
@@ -263,7 +260,7 @@ export const kidsData = [
     { img: bee, img_hd: bee_hd, key: 15 },
 ];
 
-export const signatureData = [
+export const signature = [
     { img: green_abstract, img_hd: green_abstract_hd, key: 0 },
     { img: green_abstract_2, img_hd: green_abstract_2_hd, key: 1 },
     { img: kitty, img_hd: kitty_hd, key: 2 },
