@@ -33,7 +33,7 @@
     --color_D: rgb(159, 120, 90);
 
     --hover: rgb(181, 72, 95);
-    --mobile_nav_bg: rgb(241, 152, 152, 0.82);
+    --mobile_nav_bg: rgb(241, 152, 152, 0.9);
     --mobile_nav: rgb(247, 222, 222);
 
     --box-shadow-color: rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ nav {
 }
 
 .button_style:hover {
-    background-color: var(--button-hover-bg-c);
+    background-color: var(--hover);
 }
 
 /* home page */
@@ -93,6 +93,11 @@ nav {
 #tri_highlights {
     background-color: var(--color_C_bg);
     color: var(--color_C);
+}
+
+#tri_highlights {
+    background-color: var(--color_B_bg);
+    color: var(--color_B);
 }
 
 #slide_show {
@@ -130,3 +135,11 @@ form textarea, form input {
     box-shadow: 0 4px 8px rgba(157, 147, 147, 0.1);
     background-color: var(--input-bg-c);
 }
+
+
+input:focus, textarea:focus, button:focus {
+    outline: 2px solid pink;
+    border-color: pink; 
+    background-color: rgb(235, 225, 217);
+}
+

@@ -15,11 +15,6 @@ form {
     width: 100vw;
 }
 
-input:focus, textarea:focus, button:focus {
-    outline: 2px solid pink;
-    border-color: pink; 
-}
-
 form textarea, form input, .fill {
     max-width: 600px;
     width: 100%; 

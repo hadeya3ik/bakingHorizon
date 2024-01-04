@@ -9,25 +9,4 @@ for dir in ../images/dec31gallery/*/; do
                 if [ "${file##*.}" = "webp" ]; then
                     echo "import $(basename "$file" .webp) from '${dir}${file}';" >> "$output_file"
                 else 
-                    echo "import $(basename "$file" .jpg)_hd from '${dir}${file}';" >> "$output_file"
-                fi
-        done)
-    echo
-done
-
-echo >> "$output_file"
-
-for dir in ../images/dec31gallery/*/; do 
-    counter=0
-    echo "export const "$(basename $dir)" = [" >> "$output_file" 
-    (cd $dir && for file in * ; do
-        baseFile=$(basename $file .jpg)
-
-        if [ "${file##*.}" = "jpg" ]; then
-            echo "{img: $baseFile, img_hd : $baseFile"_hd", key: $counter} , " >> "$output_file"
-            ((counter++))
-        fi
-        
-        done)
-    echo "]" >> "$output_file"
-done
+                    echo "import $(basename "$file" .jpg)_hd from 

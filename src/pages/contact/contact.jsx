@@ -1,7 +1,23 @@
 import './contact.css'
 import filler from '../../images/filler.png'
 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_j1psnaa', 'template_9ltupiu', form.current, 'd7OG-IO35Gvd9x2Ie')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className="flex_center col">
       <div className="flex_center col">
@@ -16,11 +32,11 @@ const Contact = () => {
           <img className="image" src={filler} alt="Cake Image"/>
         </div>
       </div>
-      <form className="text__style_3 flex_center col" action="/submit-form" method="post">
-        <input type="text" id="name" name="name" placeholder="Name"/>
-        <input type="email" id="email" name="email" placeholder="Email" required/>
+      <form ref={form} onSubmit={sendEmail} className="text__style_3 flex_center col" action="/submit-form" method="post">
+        <input type="text" id="name" name="from_name" placeholder="Name"/>
+        <input type="email" id="email" name="reply_to" placeholder="Email" required/>
         <input type="tel" id="phone" name="phone" placeholder="Phone number"/>
-        <textarea id="comment" name="comment" placeholder="Comment"></textarea>
+        <textarea id="comment" name="message" placeholder="Comment"></textarea>
         <div className="fill"> 
           <button id="submit-button" className="button_style" type="submit">Send</button>
         </div>
