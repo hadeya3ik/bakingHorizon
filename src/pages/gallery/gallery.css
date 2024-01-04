@@ -5,7 +5,6 @@
     grid-gap: 3rem;
     padding: 3rem;
     grid-template-columns: repeat(2, 1fr);
-    /* background-color: white; */
 }
 
 .animate {
@@ -45,6 +44,7 @@
 }
 
 #filter {
+    white-space: nowrap;
     display: grid;
     grid-template-columns: repeat(8, auto);
     gap: 2rem;
@@ -54,6 +54,12 @@
   #filter {
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media (max-width: 500px) {
+    #filter {
+      gap: 0.25rem;
   }
 }
 

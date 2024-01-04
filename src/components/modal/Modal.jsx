@@ -1,8 +1,8 @@
 import "./modal.css"
 import { useEffect } from 'react';
-import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoCloseOutline } from "react-icons/io5";
 
 const Modal = ({img, closeModal, nextImage, prevImage}) => {
 
@@ -26,7 +26,7 @@ const Modal = ({img, closeModal, nextImage, prevImage}) => {
   return (
     <div className="modal">
         <div className="exit_modal" >
-            <AiOutlineCloseCircle size={30} onClick={closeModal} className="exit_icon" />
+            <IoCloseOutline size={30} onClick={closeModal} className="exit_icon" />
         </div>
         <div className="image_display" >
            <IoIosArrowRoundBack size={40} onClick={prevImage} className="left_arrow"/>

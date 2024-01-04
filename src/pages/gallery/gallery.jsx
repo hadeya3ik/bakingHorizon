@@ -20,7 +20,6 @@ const Gallery = () => {
   const [modalOpen, setModal] = useState(false);
   const [currPos, setPos] = useState(0);
 
-  // sets the filter + animation
   function handleFilter(new_filter) {
     if (new_filter !== filter) { 
       setAnimate(false); 
@@ -31,7 +30,6 @@ const Gallery = () => {
     }
   }
   
-  // the current filter applied
   let filteredData = filterItems.filter((item) => item.text == filter)[0].data;
   let maxPos = filteredData.length;
   
