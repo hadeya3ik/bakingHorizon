@@ -1,12 +1,31 @@
 import "./modal.css"
+import { useEffect } from 'react';
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Modal = ({img, closeModal, nextImage, prevImage}) => {
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') {
+        nextImage();
+      } else if (e.key === 'ArrowLeft') {
+        prevImage();
+      } else if (e.key === 'Escape') {
+        closeModal();
+      } 
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };}, [nextImage, prevImage]);
+  
   return (
     <div className="modal">
-        <div className="exit_modal">
+        <div className="exit_modal" >
             <AiOutlineCloseCircle size={30} onClick={closeModal} className="exit_icon" />
         </div>
         <div className="image_display" >

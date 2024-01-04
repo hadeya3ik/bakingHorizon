@@ -11,8 +11,12 @@
     justify-content: flex-start;
     padding: 2rem;
     padding-top: 4rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
+  
 .exit_modal {
     width: 100%;
     display: flex;
