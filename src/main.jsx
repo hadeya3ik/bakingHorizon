@@ -7,7 +7,7 @@ import {BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={'bakingHorizon'}>
+    <BrowserRouter basename={'bakingHorizon/'}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
