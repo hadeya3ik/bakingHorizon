@@ -1,21 +1,4 @@
-/* :root {
-    --nav-bg-c: rgb(245, 206, 189);
-    --nav-color: rgb(202, 132, 110);
-    --body-bg-c: rgb(237, 234, 231);
-    --body-color: rgb(182, 142, 107);
-    --hover-color: rgb(130, 85, 72);
-    --mobile-menu-bg-c: rgba(202, 132, 110, 0.95);
-    --footer-bg-c: rgb(206, 216, 196);
-    --footer-color: rgb(70, 79, 69);
-    --button-bg-c: rgb(206, 216, 196);
-    --button-hover-bg-c: pink;
-    --input-bg-c: rgb(239, 238, 236);
-    --menu-hero-bg-c: rgb(209, 213, 200);
-    --map-bg-c: antiquewhite;
-    --box-shadow-color: rgba(0, 0, 0, 0.1);
-} */
-
-/* :root {
+:root {
     --nav-bg-c: rgb(241, 191, 186);
     --nav-color: rgb(234, 116, 116);
     --body-bg-c: rgb(237, 234, 231);
@@ -104,4 +87,4 @@ form textarea, form input {
 
 nav {
     box-shadow: 0 4px 8px var(--box-shadow-color);
-} */
+}

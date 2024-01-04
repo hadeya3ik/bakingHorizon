@@ -1,0 +1,132 @@
+/* :root {
+    --color_A: rgb(255, 251, 224);
+    --color_A_bg: rgb(200, 214, 192);
+
+    --color_B: rgb(182, 142, 107);
+    --color_B_bg:  rgb(237, 234, 231);
+
+    --color_C: rgb(63, 93, 128);;
+    --color_C_bg: rgb(192, 225, 253);
+
+    --color_D_bg: rgb(255, 207, 214);
+    --color_D: rgb(231, 123, 139);
+
+    --hover: rgb(31, 15, 71);
+    --mobile_nav_bg: rgba(85, 130, 166, 0.682);
+    --mobile_nav: rgb(229, 222, 247);
+
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+} */
+
+:root {
+    --color_A: rgb(234, 116, 116);
+    --color_A_bg:rgb(241, 191, 186);
+
+    --color_B: rgb(182, 142, 107);
+    --color_B_bg:  rgb(237, 234, 231);
+
+/* comment */
+    --color_C: rgb(241, 191, 186);
+    --color_C_bg: rgb(235, 131, 131);
+
+    --color_D_bg: rgb(232, 205, 184);
+    --color_D: rgb(159, 120, 90);
+
+    --hover: rgb(181, 72, 95);
+    --mobile_nav_bg: rgb(241, 152, 152, 0.82);
+    --mobile_nav: rgb(247, 222, 222);
+
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--color_B_bg);
+    color: var(--color_B);
+}
+
+/* header & footer */
+.top-nav {
+    background-color: var(--color_A_bg);
+    color: var(--color_A);
+}
+
+nav {
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+.mobile-menu .nav-li:hover, .nav-li:hover, .top-ul .active, .side-ul .active, #filter li.active {
+    color: var(--hover);
+}
+
+.mobile-menu {
+    background-color: var(--mobile_nav_bg);
+    color: var(--mobile_nav);
+}
+
+.mobile-menu .nav-li {
+    color: var(--mobile_nav);
+}
+
+.footer {
+    background-color: var(--color_D_bg);
+    color: var(--color_D);
+}
+
+/* button */
+
+.button_style {
+    background-color: var(--color_C_bg);
+    color: var(--color_C);
+}
+
+.button_style:hover {
+    background-color: var(--button-hover-bg-c);
+}
+
+/* home page */
+
+#about_us {
+    background-color: var(--color_D_bg);
+    color: var(--color_D);
+}
+
+#tri_highlights {
+    background-color: var(--color_C_bg);
+    color: var(--color_C);
+}
+
+#slide_show {
+    background-color: var(--color_A_bg);
+    color: var(--color_A);
+}
+
+/* menu */
+
+.menu_hero {
+    background-color: var(--color_D);
+    color: var(--color_D_bg);
+}
+
+/* faq */
+
+.faq h {
+    background-color: var(--color_C_bg);
+    color: var(--color_C);
+}
+
+.menu_container {
+    background-color: var(--color_A_bg);
+    color: var(--color_A);
+}
+
+.map {
+    background-color: var(--color_A_bg);
+    color: var(--color_A);
+}
+
+/* contact */
+
+form textarea, form input {
+    box-shadow: 0 4px 8px rgba(157, 147, 147, 0.1);
+    background-color: var(--input-bg-c);
+}
