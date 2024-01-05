@@ -1,7 +1,9 @@
 .hero {
     background-image: url("../../images/hero.jpg");
+    background-image: url("../../images/dec31gallery/baby_shower/bear_twin.jpg");
+    background-image: url("../../images/moon_bear.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     width: 100vw;
     height: 25rem;
     background-position: center bottom;

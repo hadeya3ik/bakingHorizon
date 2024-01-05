@@ -3,12 +3,18 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import { BsBalloonHeart } from "react-icons/bs";
 import { PiPlant } from "react-icons/pi";
 import SlideShow from '../../components/slideShow/slideShow'
+import Carousel from '../../components/carouselCont/carouselCont'
 
 const Home = () => {
   return (
     <>
-      <div className="hero flex_center"> 
-        </div>
+    <Carousel>
+
+    </Carousel>
+      {/* <div className="hero flex_center">
+        <div className="hero-image" id="bear-twin"></div>
+        <div className="hero-image" id="striped-bear"></div>
+      </div> */}
         <div id="about_us" className="col flex_center standard_padding">
           <h2 className="header__1">About Us</h2>
           <p className='text__style_1' >Baking Horizon is a family-owned business nestled in Milton, dedicated to crafting exquisite custom cakes. From birthdays to weddings, we cater to all your special occasions. Explore a wide array of flavors and styles, and let us create a uniquely personalized cake for your celebration. With a passion for baking and a commitment to quality, we take pride in turning your dream cake into a delicious reality.</p>

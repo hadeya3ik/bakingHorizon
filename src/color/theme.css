@@ -112,6 +112,12 @@ nav {
     color: var(--color_D_bg);
 }
 
+/* gallery */
+
+/* #gallery_page {
+    background-color:rgb(250, 223, 219);
+} */
+
 /* faq */
 
 .faq h {
@@ -136,10 +142,8 @@ form textarea, form input {
     background-color: var(--input-bg-c);
 }
 
-
 input:focus, textarea:focus, button:focus {
     outline: 2px solid pink;
     border-color: pink; 
     background-color: rgb(235, 225, 217);
 }
-

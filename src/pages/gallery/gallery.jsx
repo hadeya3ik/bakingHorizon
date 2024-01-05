@@ -47,7 +47,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className="flex_center col">
+    <div id="gallery_page" className="flex_center col">
       <div className="flex_center col">
         <h1 className="page_heading">Gallery</h1>
       </div>
