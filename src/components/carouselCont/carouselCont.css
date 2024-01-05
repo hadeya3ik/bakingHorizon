@@ -1,12 +1,20 @@
 .custom-carousel {
     max-height: 500px;
 }
-  
+
 .custom-carousel .carousel-item {
     height: 500px;
 }
-  
+
 .custom-carousel img {
     height: 100%;
     object-fit: cover;
+    object-position: center 30%; /* Focuses on the center and slightly higher part of the image */
+}
+
+/* Media query for desktop screens */
+@media (min-width: 992px) { /* Adjust the min-width as needed for your design */
+    .custom-carousel img {
+        object-position: center 30%; /* Change this value to focus on the desired part of the image */
+    }
 }
