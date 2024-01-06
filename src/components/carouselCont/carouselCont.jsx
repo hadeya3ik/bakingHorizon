@@ -7,9 +7,9 @@ import img3 from '../../images/carousel/moon_bear.jpg'
 import img4 from '../../images/carousel/astro.png'
 
 const images = [
-  { img: img1, alt : "lion boy" },
-  { img: img2, alt : "donuts"},
   { img: img3, alt : "bear"},
+  { img: img2, alt : "donuts"},
+  { img: img1, alt : "lion boy" },
   { img: img4, alt : "astro"}
 ];
 
