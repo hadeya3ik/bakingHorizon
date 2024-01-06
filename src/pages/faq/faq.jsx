@@ -18,11 +18,11 @@ const Faq = () => {
           </div>
           <div className="qa">
             <h3>3. How much do custom cakes cost?</h3>
-            <p>Our cake prices vary depending on the design, size, and intricacy of the cake. For a rough estimate, please visit our menu page, where you can find pricing details along with serving size information. Feel free to contact us for an exact quotation</p>
+            <p>Our cake prices vary depending on the design, size, and intricacy of the cake. For a rough estimate, please visit our menu page, where you can find pricing details along with serving size information. Feel free to contact us for an exact quotation.</p>
           </div>
           <div className="qa">
             <h3>4. Do you offer any other desserts?</h3>
-            <p>Other than cake, we offer a delightful selection of other desserts, including cake pops, cupcakes, and sugar cookies.</p>
+            <p>We offer a delightful selection of other desserts, including cake pops, cupcakes, and sugar cookies.</p>
           </div>
           <div className="qa">
             <h3>5. Are your cakes Halal?</h3>
@@ -30,7 +30,7 @@ const Faq = () => {
           </div>
           <div className="qa">
             <h3>6. What is the difference between fondant and buttercream?</h3>
-            <p>Buttercream has a soft and creamy texture, is available in a variety of flavors, but is more susceptible to melting. Therefore, it should be refrigerated at least 2-3 hours before serving. Fondant, on the other hand, has a sweet and gummy texture. It serves as a sugar-based covering for cakes and is commonly used for intricate designs and sculpting.</p>
+            <p>Buttercream has a soft and creamy texture and it is available in a variety of flavors. However, it is more susceptible to melting so it should be refrigerated at least 2-3 hours before serving. Fondant, on the other hand, has a sweet and gummy texture, it serves as a sugar-based covering for cakes and is commonly used for intricate designs and sculpting.</p>
           </div>
           <div className="qa">
             <h3>7. Do you deliver?</h3>

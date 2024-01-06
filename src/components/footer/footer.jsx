@@ -7,13 +7,13 @@ const Footer = () => {
     <div className="footer">
       <div className="socials">
         <div className="ig">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/bakinghorizon/?hl=en" target="_blank" rel="noopener noreferrer">
             <AiOutlineInstagram size={18} />
             <div>Instagram</div>
           </a>
         </div>
         <div className="fb">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/bakinghorizon/" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={18} />
             <div>Facebook</div>
           </a>

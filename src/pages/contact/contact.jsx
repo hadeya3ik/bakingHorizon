@@ -22,7 +22,7 @@ const Contact = () => {
     <div className="flex_center col">
       <div className="flex_center col">
         <h className="page_heading" >Contact Us</h>
-        <p className="contact_info text__style_3">For in queries, fill up a contact form or email us at</p>
+        <p className="contact_info text__style_3">For inquiries, fill up a contact form or email us at</p>
         <p className="text__style_3">bakinghorizon@gmail.com</p>
       </div>
       <div className="box flex_center contact-gallery">
