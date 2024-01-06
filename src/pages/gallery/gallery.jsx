@@ -15,7 +15,7 @@ const filterItems = [
 ];
 
 const Gallery = () => {
-  const [filter, setFilter] = useState('signature');
+  const [filter, setFilter] = useState('baby showers');
   const [animate, setAnimate] = useState(true);
   const [modalOpen, setModal] = useState(false);
   const [currPos, setPos] = useState(0);
