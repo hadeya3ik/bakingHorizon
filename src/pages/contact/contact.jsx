@@ -1,5 +1,5 @@
 import './contact.css'
-import filler from '../../images/filler.png'
+import filler from '../../images/cropped.png'
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
