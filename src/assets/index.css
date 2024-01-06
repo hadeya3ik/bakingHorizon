@@ -1,8 +1,15 @@
 @tailwind base;
 @tailwind components;
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 body {
-    background-color: rgb(255, 255, 255);
+    overflow-y: auto; /* Scroll vertically if needed */
+    overflow-x: hidden; /* Hide horizontal scroll */
 }
 
 .flex_center {
