@@ -44,13 +44,12 @@ const Menu = () => {
         <div className="menu_container">
           <h2 className="header__1">Cake Sizing Guide</h2>
           <div id="sizing_guide" className='flex_center col'>
-            <p id="sizing_info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="sizing_info">The following is a guide to cake serving sizes and prices. By default, all cakes have 3 layers. Please note that prices are subject to change based on the designs and layers of the cake.</p>
             <div id="sizes">
-              <p>4" starts at $99 (4-6 servings)</p>
-              <p>5" starts at $104 (6-8 servings)</p>
-              <p>6" starts at $108 (8-10 servings)</p>
-              <p>7" starts at $126 (11-15 servings)</p>
-              <p>8” starts at $144 (16-20 servings)</p>
+              <p>6" starts at $95 (10-15 servings)</p>
+              <p>7" starts at $125 (15-20 servings)</p>
+              <p>8” starts at $155 (20-25 servings)</p>
+              <p>10” starts at $190 (35-40 servings)</p>
             </div>
           </div>
         </div>
