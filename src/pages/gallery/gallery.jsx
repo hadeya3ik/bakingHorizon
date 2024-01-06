@@ -1,5 +1,5 @@
 import './gallery.css'
-import { cupcakes, dholki, floral, baby_shower, characters, kids, signature } from '../../scripts/test.jsx' 
+import { cupcakes, dholki, floral, baby_shower, characters, kids, signature } from '../../scripts/imports.jsx' 
 //import { cupcakes, dholki, florall, baby_shower, characters, kids, signature } from './galleryData' 
 import { useState } from 'react';
 import Modal from '../../components/modal/Modal'
