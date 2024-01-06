@@ -117,6 +117,8 @@ import art_hd from '../images/dec31gallery/kids/art.jpg';
 import art from '../images/dec31gallery/kids/art.webp';
 import astranout_hd from '../images/dec31gallery/kids/astranout.jpg';
 import astranout from '../images/dec31gallery/kids/astranout.webp';
+import astro_2_hd from '../images/dec31gallery/kids/astro_2.jpg';
+import astro_2 from '../images/dec31gallery/kids/astro_2.webp';
 import bee_hd from '../images/dec31gallery/kids/bee.jpg';
 import bee from '../images/dec31gallery/kids/bee.webp';
 import blocks_hd from '../images/dec31gallery/kids/blocks.jpg';
@@ -159,6 +161,8 @@ import safari_4_hd from '../images/dec31gallery/kids/safari_4.jpg';
 import safari_4 from '../images/dec31gallery/kids/safari_4.webp';
 import safari_5_hd from '../images/dec31gallery/kids/safari_5.jpg';
 import safari_5 from '../images/dec31gallery/kids/safari_5.webp';
+import sea_hd from '../images/dec31gallery/kids/sea.jpg';
+import sea from '../images/dec31gallery/kids/sea.webp';
 import unicorn_3_hd from '../images/dec31gallery/kids/unicorn_3.jpg';
 import unicorn_3 from '../images/dec31gallery/kids/unicorn_3.webp';
 import unicorn_4_hd from '../images/dec31gallery/kids/unicorn_4.jpg';
@@ -194,31 +198,33 @@ export const baby_shower = [
 {img: striped_bear, img_hd : striped_bear_hd, key: 6} , 
 ]
 export const characters = [
-    { img: winnie_poo_honey, img_hd: winnie_poo_honey_hd, key: 0 },
-    { img: winnie_poo_3, img_hd: winnie_poo_3_hd, key: 1 },
-    { img: winnie_bee, img_hd: winnie_bee_hd, key: 2 },
-    { img: twin_fox, img_hd: twin_fox_hd, key: 3 },
-    { img: sponge_bob, img_hd: sponge_bob_hd, key: 4 },
-    { img: spiderman_3, img_hd: spiderman_3_hd, key: 5 },
-    { img: spider_man, img_hd: spider_man_hd, key: 6 },
-    { img: sonic_3, img_hd: sonic_3_hd, key: 7 },
-    { img: sesame_street, img_hd: sesame_street_hd, key: 8 },
-    { img: peppa_pig, img_hd: peppa_pig_hd, key: 9 },
-    { img: octonauts, img_hd: octonauts_hd, key: 10 },
-    { img: naruto, img_hd: naruto_hd, key: 11 },
-    { img: minnie_mouse, img_hd: minnie_mouse_hd, key: 12 },
-    { img: minnie_2, img_hd: minnie_2_hd, key: 13 },
-    { img: minnie, img_hd: minnie_hd, key: 14 },
-    { img: mickey_mouse, img_hd: mickey_mouse_hd, key: 15 },
-    { img: marvel, img_hd: marvel_hd, key: 16 },
-    { img: mario, img_hd: mario_hd, key: 17 },
-    { img: lego_ninja, img_hd: lego_ninja_hd, key: 18 },
-    { img: kirby, img_hd: kirby_hd, key: 19 },
-    { img: iron_man_hulk, img_hd: iron_man_hulk_hd, key: 20 },
-    { img: dragon_ball, img_hd: dragon_ball_hd, key: 21 },
-    { img: coco_melon, img_hd: coco_melon_hd, key: 22 },
-    { img: cars, img_hd: cars_hd, key: 23 },
-  ];
+{ img: winnie_poo_honey, img_hd: winnie_poo_honey_hd, key: 0 },
+{ img: sea, img_hd: sea_hd, key: 1 },
+{ img: winnie_bee, img_hd: winnie_bee_hd, key: 2 },
+{ img: twin_fox, img_hd: twin_fox_hd, key: 3 },
+{ img: sponge_bob, img_hd: sponge_bob_hd, key: 4 },
+{ img: spiderman_3, img_hd: spiderman_3_hd, key: 5 },
+{ img: spider_man, img_hd: spider_man_hd, key: 6 },
+{ img: sonic_3, img_hd: sonic_3_hd, key: 7 },
+{ img: sesame_street, img_hd: sesame_street_hd, key: 8 },
+{ img: peppa_pig, img_hd: peppa_pig_hd, key: 9 },
+{ img: octonauts, img_hd: octonauts_hd, key: 10 },
+{ img: naruto, img_hd: naruto_hd, key: 11 },
+{ img: minnie_mouse, img_hd: minnie_mouse_hd, key: 12 },
+{ img: minnie_2, img_hd: minnie_2_hd, key: 13 },
+{ img: minnie, img_hd: minnie_hd, key: 14 },
+{ img: mickey_mouse, img_hd: mickey_mouse_hd, key: 15 },
+{ img: marvel, img_hd: marvel_hd, key: 16 },
+{ img: mario, img_hd: mario_hd, key: 17 },
+{ img: lego_ninja, img_hd: lego_ninja_hd, key: 18 },
+{ img: kirby, img_hd: kirby_hd, key: 19 },
+{ img: iron_man_hulk, img_hd: iron_man_hulk_hd, key: 20 },
+{ img: dragon_ball, img_hd: dragon_ball_hd, key: 21 },
+{ img: coco_melon, img_hd: coco_melon_hd, key: 22 },
+{ img: cars, img_hd: cars_hd, key: 23 },
+{ img: winnie_poo_3, img_hd: winnie_poo_3_hd, key: 24 },
+]
+
 export const cupcakes = [
 {img: bee_cc, img_hd : bee_cc_hd, key: 0} , 
 {img: minie_cc, img_hd : minie_cc_hd, key: 1} , 
